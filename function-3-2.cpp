@@ -1,8 +1,9 @@
 #include<algorithm>
+using namespace std;
 int median_array(int array[], int n) {
     if (n < 1) {
         return 0;
     }
-    std::sort(array[0], array[n]);
+    sort(array, array + n);
     return array[n/2];
 }
